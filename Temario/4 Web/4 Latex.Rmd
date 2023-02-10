@@ -1,0 +1,71 @@
+---
+title: "Introducción a Latex"
+output: pdf_document
+---
+
+
+![](C:/Users/Ciencias de Datos-2/Downloads/FLACSO-R-2021-main/FLACSO-R-2021-main/Introducción a R/6 Web/6_Datos/latex_imagen.png)
+
+\vspace{5mm}
+
+
+\newpage
+
+# Introducción
+
+Cuando se piensa en el origen del cálculo diferencial e integral, inmediatamente se toma como referencia a Isaac Newton y Gottfried Leibniz, quienes hicieron grandes aportes para describir el movimiento de los objetos. Sin embargo, las ideas matemáticas que están detrás de esta disciplina son tan antiguas como la humanidad misma, esto se puede observar en las tablillas de arcilla que aún sobreviven en donde los babilonios y egipcios registraron sus avances en torno a la curvatura del círculo o la forma de obtener los volúmenes de las pirámides. 
+
+\vspace{5mm}
+
+Años más tarde el foco de atención se centró en los problemas relacionados con los números irracionales y la búsqueda por analizar las divisiones infinitas. Ese anhelo por comprender qué pasa cuando algo se divide en infinitas veces, atrajo la atención de grandes pensadores y con el paso del tiempo surgieron nuevas disciplinas como la geometría analítica, sin embargo, el estudio del infinito siempre tuvo un lugar privilegiado.
+
+\vspace{5mm}
+
+El estudio del infinito tuvo un cambio de paradigma en el siglo XVIII con Newton y Leibniz. Gracias a ellos, se consolidaron algunas ideas como la derivada o la integral y se consolidó la notación que hoy en día utilizamos. Como en muchas otras esferas de la vida, este desarrolló no estuvo exento de polémicas y una de ellas se dio por la fobia que tenía Newton en publicar sus resultados por temor a que le robaran sus ideas. De ahí que cuando Leibniz publicó sus resultados en torno a los métodos para obtener los máximos y mínimos se creara una polémica sobre quién era el autor original de las ideas. A más de cuatrocientos años, es difícil saber qué paso y quién tenía la razón, quizás lo  importante es que estas diferencias explican por qué hoy en día tenemos dos notaciones para las derivadas $f^{\prime}(x)$ y $\frac{dy}{dx}$, o  por qué el símbolo $\int_{0}^{x} f(x) \cdot dx$ es utilizado para denotar a las integrales que, en esencia, aluden a la idea de sumas infinitas. 
+
+
+\newpage
+
+
+# Ejercicio
+
+Obtener la derivada de la función: 
+ 
+$f(x)=\frac{x^4}{x+1}$
+
+\vspace{5mm}
+
+En este caso nos conviene usar la regla 8 ya que tenemos un cociente. Para ello consideramos dos funciones: $h(x)=x^4$ y $g(x)=x+1$. Validamos si con dichas funciones llegamos a la función original:
+
+$f(x)=\frac{h(x)}{g(x)}=\frac{x^4}{x+1}$
+
+Luego obtenemos las derivadas individuales 
+
+\vspace{5mm}
+
+$h(x)=4x^3$
+
+\vspace{5mm}
+
+$g(x)=1$
+
+\vspace{5mm}
+
+Y aplicamos la regla 8:
+$(\frac{f}{g})^{\prime}(x)=\frac{g(x)f^{\prime}(x)-f(x)g^{\prime}(x)}{g^2(x)}$
+
+\vspace{5mm}
+
+**Un consejo**: para no perdernos usamos los paréntesis de modo que sea más fácil identificar a todos los términos de la ecuación anterior 
+
+\vspace{5mm}
+
+$(\frac{h}{g})'(x)=\frac{(x+1)(4x^4)-(x^4)(1)}{(x+1)^2}$
+
+\vspace{5mm}
+
+Podemos simplificar un poco y obtenemos lo siguiente 
+
+\vspace{5mm}
+
+$(\frac{f}{g})'(x)=\frac{4x^4+4x^3-x^4}{(x+1)^2}=\frac{3x^4+4x^3}{(x+1)^2}$
